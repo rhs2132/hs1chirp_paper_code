@@ -23,8 +23,9 @@ The above manuscript describes and validates an exact analytical solution to the
 
 The functions to prepare and run a Bloch simulation are in [simulate.py](./mrpy/simulate.py), [w1_gen.py](./mrpy/w1_gen.py), and [bloch.py](./mrpy/bloch.py). The analytical calculations are performed in [calculate.py](./mrpy/calculate.py). Functions written specifically to generate the data used in the paper (but useful as examples) are included in [hs1chirp_paper.py](./mrpy/hs1chirp_paper.py); these functions are called in [hspaper_2.0.ipynb](./hspaper_2.0.ipynb) with the figures saved in [HS1chirp_figs_2.0](./HS1chirp_figs_2.0/).
 
-As an example, below is a pre-annotation version of Figure 4 created by [hspaper_2.0.ipynb](./hspaper_2.0.ipynb) demonstrating the performance of calculations when applied to the BIR-4 composite pulse.
 ![Figure 4](./HS1chirp_figs_2.0/f4_bir4_accuracy.svg)
+
+As an example, this is a pre-annotation version of Figure 4 created by [hspaper_2.0.ipynb](./hspaper_2.0.ipynb) demonstrating the performance of calculations when applied to the BIR-4 composite pulse.
 
 ## Getting Started
 
@@ -41,7 +42,7 @@ For the figure preparation code:
 
 ### Installing
 
-* Download the repository and add to your environment
+* Download the repository and add it to your environment
 * For a local-only import, the first cell of hspaper_2.0.ipynb can be edited with the path of the repository permitting importation.
 
 ## Help
@@ -52,7 +53,9 @@ Please reach out with any questions regarding the code or bugs. Updated code wil
 
 Ryan H.B. Smith
 [smi03101@umn.edu](mailto:smi03101@umn.edu)
+
 Donald Garwood
+
 Michael Garwood
 
 ## Version History
