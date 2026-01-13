@@ -1,6 +1,6 @@
 # Code accompanying "Exact analytical solutions of the Bloch equation for the hyperbolic-secant and chirp pulses"
 
-Smith, Ryan HB, Donald Garwood, and Michael Garwood. "Exact analytical solutions of the Bloch equation for the hyperbolic‐secant and chirp pulses." Magnetic resonance in medicine (2025).
+Smith, Ryan HB, Donald Garwood, and Michael Garwood. "Exact analytical solutions of the Bloch equation for the hyperbolic‐secant and chirp pulses." *Magnetic resonance in medicine* (2025).
 
 The full manuscript is open access and available at: [https://doi.org/10.1002/mrm.30603Digital Object Identifier (DOI)](https://doi.org/10.1002/mrm.30603)
 
@@ -19,59 +19,42 @@ The derived analytical solutions for the Bloch equation during an HS1 or chirp p
 
 ## Description
 
-An in-depth paragraph about your project and overview of use.
+The above manuscript describes and validates an exact analytical solution to the evolution of the magnetic moment subject to HS1, chirp, and square pulses. This repository contains a computational implementation of the code used in the preparation of that manuscript including a Runge-Kutta fourth order Bloch simulator and analytical calculations using the mpmath library. This is a snapshot of a code base under active development, so it is provided "as is" without formal packaging.
+The functions to prepare and run a Bloch simulation are in [simulate.py](./mrpy/simulate.py), [w1_gen.py](./mrpy/w1_gen.py), and [bloch.py](./mrpy/bloch.py). The analytical calculations are performed in [calculate.py](./mrpy/calculate.py). Functions written specifically to generate the data used in the paper (but useful as examples) are included in [hs1chirp_paper.py](./mrpy/hs1chirp_paper.py); these functions are called in [hspaper_2.0.ipynb](./hspaper_2.0.ipynb) with the figures saved in [HS1chirp_figs_2.0](./HS1chirp_figs_2.0/).
 
 ## Getting Started
 
 ### Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+For the simulation and calculation code:
+* mpmath
+* numpy
+
+For the figure preparation code:
+* matplotlib
+* pandas
+* seaborn
 
 ### Installing
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+* Download the repository and add to your environment
+* For a local-only import, the first cell of hspaper_2.0.ipynb can be edited with the path of the repository permitting importation.
 
 ## Help
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+Please reach out with any questions regarding the code or bugs. Updated code will be released in a separate repository while preserving this publication-associated snapshot.
 
 ## Authors
 
-Contributors names and contact info
-
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Ryan H.B. Smith
+Donald Garwood
+Michael Garwood
 
 ## Version History
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
+* 2.0
+    * Paper codebase snahpshot release
 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
